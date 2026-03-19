@@ -24,11 +24,17 @@ class ClusterEngine:
     def reduce_dimensions(self, embeddings, n_components=10, random_state=42):
         """Reduces high-dim embeddings to low-dim space for HDBSCAN."""
         logger.info(f"Reducing dimensions to {n_components} components...")
+
+        n_samples = embeddings.shape[0]
+        init_method = 'spectral'
+        if n_samples < n_components:
+            init_method = 'random'
+            logger.warning(f"Small dataset detected ({n_samples} samples). Switching UMAP to random init.")
         
         if self.use_gpu:
-            reducer = cuUMAP(n_components=n_components, random_state=random_state)
+            reducer = cuUMAP(n_components=n_components, random_state=random_state, init=init_method)
         else:
-            reducer = cpuUMAP(n_components=n_components, random_state=random_state)
+            reducer = cpuUMAP(n_components=n_components, random_state=random_state, init=init_method)
             
         return reducer.fit_transform(embeddings)
 
@@ -39,9 +45,7 @@ class ClusterEngine:
         # HDBSCAN parameters vary slightly between implementations
         params = {
             "min_cluster_size": min_cluster_size,
-            "gen_min_span_tree": True,
             "allow_single_cluster": False,
-            "store_centroids": True,
             "metric": "l2"
         }
         
