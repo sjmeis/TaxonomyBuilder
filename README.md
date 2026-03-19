@@ -89,14 +89,14 @@ TaxonomyBuilder/
 ```
 
 
-## Tips and Hints
+## 💡 Tips and Hints
  - Domain Context: We highly recommend seeding the process with domain-specific keywords. Additionally, make sure to add example for the labeling process (max. 3)!
  - Memory Management: If you have a massive dataset, set `batch_size` lower in `.encode()` to avoid out-of-memory issues.
  - Consolidation: If your taxonomy has too many "similar" sounding categories, lower the `similarity_threshold` in `consolidate_labels` to group more labels together.
  - The "Noise": Any text marked as -1 by HDBSCAN will be labeled as noise (-1) unless `soft_cluster=True` is used. It is up to you whether you want to include these points or not!
 
 
-## Paper
+## 📚 Paper
 Check out our current working paper, which serves as the foundation for **TaxonomyBuilder**, and please cite this if you find this code helpful!
 
 ```
