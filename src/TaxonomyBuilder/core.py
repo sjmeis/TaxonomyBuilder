@@ -4,6 +4,7 @@ import torch
 from pathlib import Path
 import numpy as np
 import pandas as pd
+import string
 
 from .data import TextDataset
 from torch.utils.data import DataLoader
@@ -61,9 +62,18 @@ class TaxonomyBuilder:
         logger.info(f"Loading model '{embedding_model_name}' on {self.device}...")
         self._load_models()
 
+    def set_verbosity(self, level=logging.INFO):
+        """Sets the logging level for the builder and muffles external API logs."""
+        logging.getLogger("TaxonomyBuilder").setLevel(level)
+        
+        # Always keep these at Warning or higher to protect tqdm
+        logging.getLogger("httpx").setLevel(logging.WARNING)
+        logging.getLogger("openai").setLevel(logging.WARNING)
+        return self
+
     def _load_models(self):
         from sentence_transformers import SentenceTransformer
-        self.embedding_model = SentenceTransformer(self.model_name, device=self.device)
+        self.embedding_model = SentenceTransformer(self.embedding_model_name, device=self.device)
 
     def set_llm(self, provider_name, api_key, model_endpoint):
         """
@@ -116,7 +126,7 @@ class TaxonomyBuilder:
         if self.data is None:
             raise ValueError("You must call ingest_data first!")
 
-        loader = self._get_loader(batch_size)
+        loader = self._get_data_loader(batch_size)
         all_embeddings = []
 
         pbar = tqdm(
@@ -130,7 +140,7 @@ class TaxonomyBuilder:
 
         with torch.no_grad():
             for batch in pbar:
-                batch_emb = self.encoder.encode(
+                batch_emb = self.embedding_model.encode(
                     batch, 
                     convert_to_tensor=True, 
                     show_progress_bar=False
@@ -138,7 +148,7 @@ class TaxonomyBuilder:
                 all_embeddings.append(batch_emb.cpu())
         
         self.embeddings = torch.cat(all_embeddings, dim=0)
-        return self.embeddings
+        return self
     
     def filter_by_domain(self, percentile=25):
         """
@@ -156,11 +166,18 @@ class TaxonomyBuilder:
 
         logger.info(f"Filtering out the bottom {percentile}th percentile of irrelevant texts...")
 
+        embeddings_np = self.embeddings
+        if torch.is_tensor(embeddings_np):
+            embeddings_np = embeddings_np.detach().cpu().numpy()
+        kw_embeddings_np = self.keyword_embeddings
+        if torch.is_tensor(kw_embeddings_np):
+            kw_embeddings_np = kw_embeddings_np.detach().cpu().numpy()
+
         ## score = (average of keyword comparisons + max of keyword comparisons) / 2
-        keyword_sim_matrix = cosine_similarity(self.embeddings, self.keyword_embeddings)
+        keyword_sim_matrix = cosine_similarity(embeddings_np, kw_embeddings_np)
 
         # average keyword similarity
-        keyword_scores = keyword_sim_matrix.mean(dim=1)
+        keyword_scores = keyword_sim_matrix.mean(axis=1)
 
         # max keyword score
         max_scores = keyword_sim_matrix.max(axis=1)
@@ -175,7 +192,7 @@ class TaxonomyBuilder:
         keep_mask = scores >= threshold
         original_count = len(self.data)
         self.data = [d for i, d in enumerate(self.data) if keep_mask[i]]
-        self.embeddings = self.embeddings[keep_mask]
+        self.embeddings = embeddings_np[keep_mask]
         self.relevance_scores = scores[keep_mask]
 
         logger.info(f"Filtered {original_count - len(self.data)} texts. {len(self.data)} remain.")
@@ -349,6 +366,11 @@ class TaxonomyBuilder:
     Description: """
 
         for group in tqdm(merge_groups, desc="Aggregating Labels"):
+            master_id = group[0]
+            valid_group = [cid for cid in group if cid in self.taxonomy_labels]
+            if len(valid_group) < 2:
+                continue
+
             statements = [self.taxonomy_labels[cid] for cid in group]
             prompt = agg_template.format(str(statements))
             
@@ -393,7 +415,7 @@ class TaxonomyBuilder:
                 is_top = False
 
             # embed the labels
-            nodes_embeddings = self.encoder.encode(previous_labels)
+            nodes_embeddings = self.embedding_model.encode(previous_labels)
 
             # cluster labels
             new_cluster_ids, level_cluster_model = self.cluster_engine.cluster(
@@ -433,21 +455,65 @@ class TaxonomyBuilder:
         logger.info(f"Hierarchy complete. Reached {current_level} levels.")
         return self
     
+    def _get_alphabet_code(self, n, uppercase=True):
+        """Converts an integer to an Excel-style alphabet string (A, B, ..., AA, AB...)."""
+        chars = string.ascii_uppercase if uppercase else string.ascii_lowercase
+        result = ""
+        while n >= 0:
+            result = chars[n % 26] + result
+            n = (n // 26) - 1
+        return result
+    
     def to_hierarchy_dataframe(self):    
         """
-        Export the complete built taxonomy to a DataFrame.
+        Export the complete built taxonomy to a DataFrame with infinite-depth coding.
+        Code format example: A1.A.0.a.1.b.10042
         """
-        # start with the base data
-        df = pd.DataFrame({"text": self.data, "level_0_id": self.cluster_labels})
-        df["level_0_label"] = df["level_0_id"].map(self.levels[0])
-        
-        # iteratively map higher levels
-        for lvl in range(1, len(self.levels)):
-            child_col = f"level_{lvl-1}_id"
-            parent_id_col = f"level_{lvl}_id"
-            parent_label_col = f"level_{lvl}_label"
+        level_indices = sorted(self.levels.keys(), reverse=True)
+        root_level = level_indices[0]
+        results = []
+
+        def get_children(parent_id, current_lvl):
+            if current_lvl <= 0: return []
+            return [child for child, p in self.hierarchy[current_lvl].items() if p == parent_id]
+
+        def walk(parent_id, current_lvl, current_code, current_path_labels):
+            label = self.levels[current_lvl][parent_id]
+            new_path_labels = current_path_labels + [label]
+            depth = root_level - current_lvl
             
-            df[parent_id_col] = df[child_col].map(self.hierarchy[lvl])
-            df[parent_label_col] = df[parent_id_col].map(self.levels[lvl])
-            
-        return df
+            # Leaf Level (Statements)
+            if current_lvl == 0:
+                indices = np.where(self.cluster_labels == parent_id)[0]
+                for i in indices:
+                    stmt = self.data[i]
+                    score = int(self.relevance_scores[i] * 10000) if hasattr(self, 'relevance_scores') else 0
+                    final_code = f"{current_code}{10000 + score}"
+                    
+                    row = {"Code": final_code, "Statement": stmt}
+                    for d, path_label in enumerate(new_path_labels):
+                        row[f"Level_{d}_Label"] = path_label
+                    results.append(row)
+                return
+
+            # Internal Nodes (Recursion)
+            children = get_children(parent_id, current_lvl)
+            for idx, child_id in enumerate(children):
+                # Dynamic Coding Logic
+                if depth % 3 == 0:
+                    segment = self._get_alphabet_code(idx, uppercase=True)
+                elif depth % 3 == 1:
+                    segment = str(idx)
+                else:
+                    segment = self._get_alphabet_code(idx, uppercase=False)
+                
+                next_code = f"{current_code}{segment}."
+                walk(child_id, current_lvl - 1, next_code, new_path_labels)
+
+        # Start Recursion
+        for root_idx, root_id in enumerate(self.levels[root_level]):
+            root_seg = self._get_alphabet_code(root_idx, uppercase=True)
+            initial_code = f"A1.{root_seg}."
+            walk(root_id, root_level, initial_code, [])
+
+        return pd.DataFrame(results)
