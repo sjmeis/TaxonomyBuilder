@@ -5,7 +5,6 @@ A robust, high-performance Python framework for transforming massive, unstructur
 ## 🚀 Overview
 **TaxonomyBuilder** bridges the gap between raw data and structured knowledge. It leverages **Sentence Transformers** for semantic representation, **RAPIDS (cuML)** for GPU-accelerated clustering (if applicable), and **LLMs (user-defined: OpenAI, Anthropic, etc.)** for natural language categorization and recursive hierarchy building. The end product is a semantically meaningful taxonomy built from the ground up!
 
----
 
 ## 🛠 Installation
 
@@ -17,14 +16,13 @@ pip install taxonomybuilder
 pip install taxonomybuilder[gpu]
 ```
 
----
 
 ## 📖 Quick Start: The Full Pipeline
 Using **TaxonomyBuilder** is straightforward and simple, and highly automated! Nevertheless, you are given the opportunity to inject your *domain expertise*.
 
 Here is how to go from a list of raw strings to a multi-leveled hierarchy in minutes.
 
-```bash
+```python
 from TaxonomyBuilder import TaxonomyBuilder
 
 # Step 1: Initialize (with GPU support) - make sure to specify your preferred sentence embedding model!
@@ -60,8 +58,6 @@ df = tb.to_hierarchy_dataframe()
 df.to_csv("taxonomy_results.csv")
 ```
 
----
-
 ## 🧠 Key Features
 
 ### ⚡ GPU-Accelerated Clustering
@@ -76,24 +72,22 @@ Our relevance scoring ensures your taxonomy isn't polluted by "off-topic" data. 
 ### 🌲 Recursive Hierarchical Logic
 Unlike flat clustering, **TaxonomyBuilder** re-clusters the labels of the previous level to create a parent-child tree. It automatically switches prompts at the "Top Level" to ensure broad categories (e.g., "Operations") aren't labeled as granular tasks (e.g., "Password Reset").
 
----
 
 ## 📁 Project Structure
 
 ```plaintext
 TaxonomyBuilder/
 ├── src/TaxonomyBuilder/
-│   ├── core.py           # Main Orchestrator
+│   ├── core.py           # Main Logic
 │   ├── clustering.py     # GPU/CPU Dispatcher (UMAP/HDBSCAN)
 │   ├── data.py           # PyTorch Dataset & Dataloaders
-│   ├── llm.py            # Provider Interface (OpenAI, Anthropic)
+│   ├── llm.py            # LLM Provider Interface
 │   └── prompt_utils.py   # Dynamic Template & Few-shot Logic
 ├── tests/                # Pytest suite
 ├── pyproject.toml        # Build configuration
 └── setup.py              # Metadata & Dependencies
 ```
 
----
 
 ## Tips and Hints
  - Domain Context: We highly recommend seeding the process with domain-specific keywords. Additionally, make sure to add example for the labeling process (max. 3)!
@@ -101,7 +95,6 @@ TaxonomyBuilder/
  - Consolidation: If your taxonomy has too many "similar" sounding categories, lower the `similarity_threshold` in `consolidate_labels` to group more labels together.
  - The "Noise": Any text marked as -1 by HDBSCAN will be labeled as noise (-1) unless `soft_cluster=True` is used. It is up to you whether you want to include these points or not!
 
----
 
 ## Paper
 Check out our current working paper, which serves as the foundation for **TaxonomyBuilder**, and please cite this if you find this code helpful!
