@@ -1,0 +1,67 @@
+[build-system]
+requires = ['setuptools>=42', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "TaxonomyBuilder"
+version = "0.1.0"
+description = "A robust tool for the automated building of taxonomies using LLMs and GPU-accelerated clustering."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+authors = [
+  {name = "Stephen Meisenbacher", email = "sjmeis@gtgd.com"},
+]
+maintainers = [
+  {name = "Stephen Meisenbacher", email = "sjmeis@gtgd.com"}
+]
+keywords = ["taxonomy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">= 3.8"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "transformers",
+    "torch",
+    "sentence-transformers",
+    "openai",
+    "tqdm",
+    "scikit-learn",
+    "hdbscan",
+    "umap-learn",
+    "openai",
+    "google-genai",
+    "anthropic"
+]
+
+[project.optional-dependencies]
+# Users can run 'pip install TaxonomyBuilder[gpu]' to get RAPIDS support
+gpu = [
+    "cuml",
+]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+]
+
+[project.urls]
+Homepage = "https://github.com/sjmeis/TaxonomyBuilder"
+Documentation = "https://github.com/sjmeis/TaxonomyBuilder"
+Repository = "https://github.com/sjmeis/TaxonomyBuilder"
+Issues = "https://github.com/sjmeis/TaxonomyBuilder/issues"
+
+[tool.setuptools]
+packages = ["TaxonomyBuilder"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+TaxonomyBuilder = ['TaxonomyBuilder/data/*']
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/TaxonomyBuilder"]
