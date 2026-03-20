@@ -109,7 +109,8 @@ class TaxonomyBuilder:
             raise ValueError("All inputs in 'texts' must be strings.")
 
         self.data = texts
-        self.embeddings = self.encode()
+        self.embeddings = None
+        self.encode()
         logger.info(f"Ingested and embedded {len(self.data)} text documents.")
 
         self.domain_keywords = keywords if keywords else []
@@ -211,9 +212,13 @@ class TaxonomyBuilder:
         """
         if self.embeddings is None:
             raise ValueError("No embeddings found. Run encode() first.")
+        
+        embeddings_to_reduce = self.embeddings
+        if torch.is_tensor(embeddings_to_reduce):
+            embeddings_to_reduce = embeddings_to_reduce.detach().cpu().numpy()
 
         self.reduced_embeddings = self.cluster_engine.reduce_dimensions(
-            self.embeddings, 
+            embeddings_to_reduce, 
             n_components=n_components
         )
 
@@ -265,7 +270,7 @@ class TaxonomyBuilder:
 
         logger.info(f"Labeling {len(unique_clusters)} clusters...")
 
-        for cluster_id in tqdm(unique_clusters, desc="Labeling Taxonomy"):
+        for cluster_id in tqdm(unique_clusters, desc="Labeling Clusters"):
             # get cluster members
             indices = np.where(self.cluster_labels == cluster_id)[0]
             
@@ -385,7 +390,8 @@ class TaxonomyBuilder:
             # update original data
             for other_id in group[1:]:
                 self.cluster_labels[self.cluster_labels == other_id] = master_id
-                del self.taxonomy_labels[other_id]
+                if other_id in self.taxonomy_labels:
+                    del self.taxonomy_labels[other_id]
 
         return self
     
@@ -411,7 +417,7 @@ class TaxonomyBuilder:
             previous_labels = list(self.levels[current_level].values())
             previous_ids = list(self.levels[current_level].keys())
 
-            if len(previous_labels) < stop_at*10 or current_level == max_levels - 1:
+            if len(previous_labels) < stop_at*2 or current_level == max_levels - 1:
                 is_top = True
             else:
                 is_top = False
@@ -444,11 +450,11 @@ class TaxonomyBuilder:
             self.hierarchy[current_level] = {}
 
             unique_parents = np.unique(new_cluster_ids)
-            if not unique_parents:
+            if len(unique_parents) == 0:
                 logger.warning("No clusters found at this level. Stopping hierarchy build.")
                 break
 
-            for p_id in unique_parents:
+            for p_id in tqdm(unique_parents, desc="Labeling Taxonomy Level {}".format(current_level)):
                 child_indices = np.where(new_cluster_ids == p_id)[0]
                 child_labels = [previous_labels[i] for i in child_indices]
                 
