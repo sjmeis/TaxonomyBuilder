@@ -500,8 +500,15 @@ class TaxonomyBuilder:
     def to_hierarchy_dataframe(self):    
         """
         Export the complete built taxonomy to a DataFrame with infinite-depth coding.
-        Code format example: A1.A.0.a.1.b.10042
+        Code format example: TB.A.0.a.1.b.10042
         """
+        if hasattr(self, 'relevance_scores'):
+            global_ranks = ((-self.relevance_scores).argsort().argsort())
+            rank_lookup = {i: rank for i, rank in enumerate(global_ranks)}
+        else:
+            # Fallback if filtering wasn't run
+            rank_lookup = {i: i for i in range(len(self.data))}
+
         level_indices = sorted(self.levels.keys(), reverse=True)
         root_level = level_indices[0]
         results = []
@@ -520,19 +527,21 @@ class TaxonomyBuilder:
                 indices = np.where(self.cluster_labels == parent_id)[0]
                 for i in indices:
                     stmt = self.data[i]
-                    score = int(self.relevance_scores[i] * 10000) if hasattr(self, 'relevance_scores') else 0
-                    final_code = f"{current_code}{10000 + score}"
+                    # calculate relevance score suffix
+                    global_ordinal = rank_lookup[i]
+                    final_code = f"{current_code}{10000+global_ordinal}"
                     
                     row = {"Code": final_code, "Statement": stmt}
+                    
                     for d, path_label in enumerate(new_path_labels):
                         row[f"Level_{d}_Label"] = path_label
+                        
                     results.append(row)
                 return
 
             # Internal Nodes (Recursion)
             children = get_children(parent_id, current_lvl)
             for idx, child_id in enumerate(children):
-                # Dynamic Coding Logic
                 if depth % 3 == 0:
                     segment = self._get_alphabet_code(idx, uppercase=True)
                 elif depth % 3 == 1:
@@ -543,10 +552,10 @@ class TaxonomyBuilder:
                 next_code = f"{current_code}{segment}."
                 walk(child_id, current_lvl - 1, next_code, new_path_labels)
 
-        # Start Recursion
+        # start Recursion
         for root_idx, root_id in enumerate(self.levels[root_level]):
             root_seg = self._get_alphabet_code(root_idx, uppercase=True)
-            initial_code = f"A1.{root_seg}."
+            initial_code = f"TB.{root_seg}."
             walk(root_id, root_level, initial_code, [])
 
         return pd.DataFrame(results)
