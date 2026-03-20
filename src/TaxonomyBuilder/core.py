@@ -437,9 +437,18 @@ class TaxonomyBuilder:
                 logger.info("Only one label remains. Stopping hierarchy build.")
                 break
 
+            num_nodes = len(previous_labels)
+            dynamic_neighbors = min(15, max(2, int(np.sqrt(num_nodes))))
+
+            reduced_nodes = self.cluster_engine.reduce_dimensions(
+                nodes_embeddings, 
+                n_components=min(5, num_nodes - 1),
+                n_neighbors=dynamic_neighbors
+            )
+
             # cluster labels
             new_cluster_ids, level_cluster_model = self.cluster_engine.cluster(
-                nodes_embeddings, 
+                reduced_nodes, 
                 min_cluster_size=3
             )
             

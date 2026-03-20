@@ -21,20 +21,21 @@ class ClusterEngine:
         else:
             logger.info("ClusterEngine: Initialized on CPU.")
 
-    def reduce_dimensions(self, embeddings, n_components=10, random_state=42):
+    def reduce_dimensions(self, embeddings, n_components=10, n_neighbors=15, random_state=42):
         """Reduces high-dim embeddings to low-dim space for HDBSCAN."""
         logger.info(f"Reducing dimensions to {n_components} components...")
 
         n_samples = embeddings.shape[0]
+        safe_neighbors = min(n_neighbors, n_samples - 1)
         init_method = 'spectral'
         if n_samples < n_components:
             init_method = 'random'
             logger.warning(f"Small dataset detected ({n_samples} samples). Switching UMAP to random init.")
         
         if self.use_gpu:
-            reducer = cuUMAP(n_components=n_components, random_state=random_state, init=init_method)
+            reducer = cuUMAP(n_components=n_components, n_neighbors=safe_neighbors, random_state=random_state, init=init_method)
         else:
-            reducer = cpuUMAP(n_components=n_components, random_state=random_state, init=init_method)
+            reducer = cpuUMAP(n_components=n_components, n_neighbors=safe_neighbors, random_state=random_state, init=init_method)
             
         return reducer.fit_transform(embeddings)
 
