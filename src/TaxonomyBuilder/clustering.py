@@ -69,11 +69,16 @@ class ClusterEngine:
 
         # calculate Centroids for all valid clusters
         unique_clusters = [c for c in np.unique(labels) if c != -1]
+        if not unique_clusters:
+            return new_labels
+    
         centroids = np.array([
             reduced_embeddings[labels == c].mean(axis=0) 
             for c in unique_clusters
         ])
         noise_embeddings = reduced_embeddings[noise_mask]
+        if noise_embeddings.ndim == 1:
+            noise_embeddings = noise_embeddings.reshape(1, -1)
 
         # calculate similarity (n_noise x n_clusters) to find the index of the closest centroid for every noise point
         closest_indices = pairwise_distances_argmin(noise_embeddings, centroids)

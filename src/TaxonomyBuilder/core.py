@@ -25,6 +25,8 @@ class TaxonomyBuilder:
             model_name (str): The HuggingFace/SentenceTransformer model to use.
             use_gpu (bool): If True, attempts to use CUDA for torch and cuml.
         """
+        self.set_verbosity()
+
         self.embedding_model_name = embedding_model_name
         self.device = "cuda" if use_gpu and torch.cuda.is_available() else "cpu"
         self.use_cuml = False
@@ -409,13 +411,20 @@ class TaxonomyBuilder:
             previous_labels = list(self.levels[current_level].values())
             previous_ids = list(self.levels[current_level].keys())
 
-            if len(previous_labels) < stop_at*50 or current_level == max_levels - 1:
+            if len(previous_labels) < stop_at*10 or current_level == max_levels - 1:
                 is_top = True
             else:
                 is_top = False
 
             # embed the labels
             nodes_embeddings = self.embedding_model.encode(previous_labels)
+            nodes_embeddings = np.array(nodes_embeddings)
+
+            if nodes_embeddings.ndim == 1:
+                nodes_embeddings = nodes_embeddings.reshape(1, -1)
+            if len(previous_labels) < 2:
+                logger.info("Only one label remains. Stopping hierarchy build.")
+                break
 
             # cluster labels
             new_cluster_ids, level_cluster_model = self.cluster_engine.cluster(
@@ -435,6 +444,10 @@ class TaxonomyBuilder:
             self.hierarchy[current_level] = {}
 
             unique_parents = np.unique(new_cluster_ids)
+            if not unique_parents:
+                logger.warning("No clusters found at this level. Stopping hierarchy build.")
+                break
+
             for p_id in unique_parents:
                 child_indices = np.where(new_cluster_ids == p_id)[0]
                 child_labels = [previous_labels[i] for i in child_indices]
