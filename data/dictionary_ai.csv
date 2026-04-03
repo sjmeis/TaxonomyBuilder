@@ -1,591 +1,591 @@
 feature,sources
 3d imaging,AI_Bowen_WU
-3d reconstruction,NJ Lightcast AI Skills
-activity recognition,NJ Lightcast AI Skills
-adaboost,AI_Bowen_WU;NJ Lightcast AI Skills
-adaptive boost,NJ Lightcast AI Skills
-adobe sensei,NJ Lightcast AI Skills
-advanced driver assistance systems,NJ Lightcast AI Skills
-advanced robotics,NJ Lightcast AI Skills
-adversarial machine learning,NJ Lightcast AI Skills
-agentic ai,NJ Lightcast AI Skills
-agentic systems,NJ Lightcast AI Skills
-agile methodology,NJ Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
+3d reconstruction,Lightcast AI Skills
+activity recognition,Lightcast AI Skills
+adaboost,AI_Bowen_WU;Lightcast AI Skills
+adaptive boost,Lightcast AI Skills
+adobe sensei,Lightcast AI Skills
+advanced driver assistance systems,Lightcast AI Skills
+advanced robotics,Lightcast AI Skills
+adversarial machine learning,Lightcast AI Skills
+agentic ai,Lightcast AI Skills
+agentic systems,Lightcast AI Skills
+agile methodology,Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
 agritech,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
 ai,AI Non-tech term
-ai agents,NJ Lightcast AI Skills
+ai agents,Lightcast AI Skills
 ai as a service,custom2026
-ai copywriting,NJ Lightcast AI Skills
+ai copywriting,Lightcast AI Skills
 ai ethics,Stanford_AI_Skill_Clusters
 ai governance,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas;Stanford_AI_Skill_Clusters
-ai inference,NJ Lightcast AI Skills
+ai inference,Lightcast AI Skills
 ai infrastructure,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-ai personalization,NJ Lightcast AI Skills
+ai personalization,Lightcast AI Skills
 ai regulation,Stanford_AI_Skill_Clusters
 ai research,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
 ai safety,custom2026
-ai security,NJ Lightcast AI Skills
-ai testing,NJ Lightcast AI Skills
-ai/ml inference,NJ Lightcast AI Skills
+ai security,Lightcast AI Skills
+ai testing,Lightcast AI Skills
+ai/ml inference,Lightcast AI Skills
 aiaas,custom2026
-aiml,NJ Lightcast AI Skills
-aiops,NJ Lightcast AI Skills
-algorithms,NJ Lightcast AI Skills;custom2026
-amazon alexa,NJ Lightcast AI Skills
-amazon lex,NJ Lightcast AI Skills
-amazon textract,NJ Lightcast AI Skills
-amelia,NJ Lightcast AI Skills
+aiml,Lightcast AI Skills
+aiops,Lightcast AI Skills
+algorithms,Lightcast AI Skills;custom2026
+amazon alexa,Lightcast AI Skills
+amazon lex,Lightcast AI Skills
+amazon textract,Lightcast AI Skills
+amelia,Lightcast AI Skills
 analysis / opinion mining,Abis_Veldkamp_2080
 anomaly detection,AI_Bowen_WU
 anthropic,AI Company
 anthropic claude,AI Specific tool
-antlr,NJ Lightcast AI Skills
-apache madlib,NJ Lightcast AI Skills
-apache mahout,NJ Lightcast AI Skills
-apache mxnet,NJ Lightcast AI Skills
-apache opennlp,NJ Lightcast AI Skills
-apache singa,NJ Lightcast AI Skills
-apache spark,NJ Lightcast AI Skills
+antlr,Lightcast AI Skills
+apache madlib,Lightcast AI Skills
+apache mahout,Lightcast AI Skills
+apache mxnet,Lightcast AI Skills
+apache opennlp,Lightcast AI Skills
+apache singa,Lightcast AI Skills
+apache spark,Lightcast AI Skills
 apple intelegence,AI Specific tool
-application layers,NJ Lightcast AI Skills
-applications of artificial intelligence,NJ Lightcast AI Skills
-applied mechanics,NJ Lightcast AI Skills
+application layers,Lightcast AI Skills
+applications of artificial intelligence,Lightcast AI Skills
+applied mechanics,Lightcast AI Skills
 ar,Stanford_AI_FocusAreas
 ar/vr,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-artificial general intelligence,AI Non-tech term;NJ Lightcast AI Skills;custom2026
-artificial intelligence,AI Non-tech term;AI_Bowen_WU;NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Alt2;Tambe2025_Machines_Robustness;Abis_Veldkamp_2024;Stanford_AI_Skill_Clusters;custom2026;custom2026
-artificial intelligence development,NJ Lightcast AI Skills
-artificial intelligence markup language,NJ Lightcast AI Skills
-artificial intelligence risk,NJ Lightcast AI Skills
-artificial intelligence systems,NJ Lightcast AI Skills
-artificial neural networks,NJ Lightcast AI Skills
-association rule learning,NJ Lightcast AI Skills
-attention mechanisms,NJ Lightcast AI Skills
+artificial general intelligence,AI Non-tech term;Lightcast AI Skills;custom2026
+artificial intelligence,AI Non-tech term;AI_Bowen_WU;Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Alt2;Tambe2025_Machines_Robustness;Abis_Veldkamp_2024;Stanford_AI_Skill_Clusters;custom2026;custom2026
+artificial intelligence development,Lightcast AI Skills
+artificial intelligence markup language,Lightcast AI Skills
+artificial intelligence risk,Lightcast AI Skills
+artificial intelligence systems,Lightcast AI Skills
+artificial neural networks,Lightcast AI Skills
+association rule learning,Lightcast AI Skills
+attention mechanisms,Lightcast AI Skills
 augmented reality,custom2026
 autoencoder,custom2026
-autoencoders,NJ Lightcast AI Skills
-autogen,NJ Lightcast AI Skills
-automated data cleaning,NJ Lightcast AI Skills
-automated machine learning,NJ Lightcast AI Skills
+autoencoders,Lightcast AI Skills
+autogen,Lightcast AI Skills
+automated data cleaning,Lightcast AI Skills
+automated machine learning,Lightcast AI Skills
 automatic speech recognition,Abis_Veldkamp_2036
 automatic summarization,custom2026
 automation of sales follow-up interactions,Stanford_GenAI_Use_Case
-autonomation,NJ Lightcast AI Skills
-autonomic computing,NJ Lightcast AI Skills
-autonomous cruise control systems,NJ Lightcast AI Skills
+autonomation,Lightcast AI Skills
+autonomic computing,Lightcast AI Skills
+autonomous cruise control systems,Lightcast AI Skills
 autonomous driving,Stanford_AI_Skill_Clusters
-autonomous system,NJ Lightcast AI Skills;custom2026
-autonomous vehicles,NJ Lightcast AI Skills
+autonomous system,Lightcast AI Skills;custom2026
+autonomous vehicles,Lightcast AI Skills
 av,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-aws certified machine learning specialty,NJ Lightcast AI Skills
-aws sagemaker,NJ Lightcast AI Skills
-azure ai engineer,NJ Lightcast AI Skills
-azure ai fundamentals,NJ Lightcast AI Skills
-azure ai language understanding,NJ Lightcast AI Skills
-azure cognitive services,NJ Lightcast AI Skills
-azure machine learning,NJ Lightcast AI Skills
-azure openai,NJ Lightcast AI Skills
+aws certified machine learning specialty,Lightcast AI Skills
+aws sagemaker,Lightcast AI Skills
+azure ai engineer,Lightcast AI Skills
+azure ai fundamentals,Lightcast AI Skills
+azure ai language understanding,Lightcast AI Skills
+azure cognitive services,Lightcast AI Skills
+azure machine learning,Lightcast AI Skills
+azure openai,Lightcast AI Skills
 backpropagation,Abis_Veldkamp_2072
-bagging,NJ Lightcast AI Skills
-baidu,NJ Lightcast AI Skills
-bayesian belief networks,NJ Lightcast AI Skills
+bagging,Lightcast AI Skills
+baidu,Lightcast AI Skills
+bayesian belief networks,Lightcast AI Skills
 bayesian methods,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
 bayesian modeling,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
 bayesian networks,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-bert,NJ Lightcast AI Skills;custom2026
-big data,NJ Lightcast AI Skills;custom2026
+bert,Lightcast AI Skills;custom2026
+big data,Lightcast AI Skills;custom2026
 big data analytics,Abis_Veldkamp_2069
-boltzmann machine,NJ Lightcast AI Skills;custom2026
-boosting,NJ Lightcast AI Skills
-bootstrap aggregating,NJ Lightcast AI Skills
-bot framework,NJ Lightcast AI Skills
-c++,NJ Lightcast AI Skills
-caffe,NJ Lightcast AI Skills
+boltzmann machine,Lightcast AI Skills;custom2026
+boosting,Lightcast AI Skills
+bootstrap aggregating,Lightcast AI Skills
+bot framework,Lightcast AI Skills
+c++,Lightcast AI Skills
+caffe,Lightcast AI Skills
 caffe deep learning framework,Abis_Veldkamp_2074
-caffe2,NJ Lightcast AI Skills
-catboost,NJ Lightcast AI Skills
-chaid,NJ Lightcast AI Skills;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-chainer,NJ Lightcast AI Skills
+caffe2,Lightcast AI Skills
+catboost,Lightcast AI Skills
+chaid,Lightcast AI Skills;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
+chainer,Lightcast AI Skills
 chat application,AI Non-tech term
 chat gpt,AI Specific tool
-chatbot,AI Non-tech term;NJ Lightcast AI Skills;custom2026
-chatgpt,AI Specific tool;NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+chatbot,AI Non-tech term;Lightcast AI Skills;custom2026
+chatgpt,AI Specific tool;Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 chi square automatic interaction detection,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-chi-squared automatic interaction detection,NJ Lightcast AI Skills
+chi-squared automatic interaction detection,Lightcast AI Skills
 classification algorithms,Abis_Veldkamp_2060
-classification and regression tree,NJ Lightcast AI Skills
+classification and regression tree,Lightcast AI Skills
 claude,AI Specific tool
-cluster analysis,AI_Bowen_WU;NJ Lightcast AI Skills;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
+cluster analysis,AI_Bowen_WU;Lightcast AI Skills;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
 cnn,Abis_Veldkamp_2044
-cntk,NJ Lightcast AI Skills
+cntk,Lightcast AI Skills
 code creation,Stanford_GenAI_Use_Case
-cognitive automation,NJ Lightcast AI Skills
-cognitive computing,NJ Lightcast AI Skills
-cognitive robotics,NJ Lightcast AI Skills
-collaborative filtering,NJ Lightcast AI Skills
-computational intelligence,NJ Lightcast AI Skills;custom2026
-computational linguistics,NJ Lightcast AI Skills;Abis_Veldkamp_2083;custom2026
-computer engineering,NJ Lightcast AI Skills
-computer science,NJ Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
-computer vision,NJ Lightcast AI Skills;Abis_Veldkamp_2065;custom2026
+cognitive automation,Lightcast AI Skills
+cognitive computing,Lightcast AI Skills
+cognitive robotics,Lightcast AI Skills
+collaborative filtering,Lightcast AI Skills
+computational intelligence,Lightcast AI Skills;custom2026
+computational linguistics,Lightcast AI Skills;Abis_Veldkamp_2083;custom2026
+computer engineering,Lightcast AI Skills
+computer science,Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
+computer vision,Lightcast AI Skills;Abis_Veldkamp_2065;custom2026
 computer vision ,AI_Bowen_WU
-concept drift detection,NJ Lightcast AI Skills
+concept drift detection,Lightcast AI Skills
 conditional random field,Abis_Veldkamp_2039
 conditional random field ,AI_Bowen_WU
-confusion matrix,NJ Lightcast AI Skills
+confusion matrix,Lightcast AI Skills
 content translation,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-contextual image classification,NJ Lightcast AI Skills
-conversational ai,NJ Lightcast AI Skills
+contextual image classification,Lightcast AI Skills
+conversational ai,Lightcast AI Skills
 convolutional neural network,custom2026
-convolutional neural networks,NJ Lightcast AI Skills
+convolutional neural networks,Lightcast AI Skills
 copilot,AI Specific tool
-cortana,NJ Lightcast AI Skills
+cortana,Lightcast AI Skills
 "creative, music, video content",Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-crewai,NJ Lightcast AI Skills
+crewai,Lightcast AI Skills
 cuda,AI tech term;custom2026
-cudnn,NJ Lightcast AI Skills
-cyber governance,NJ Lightcast AI Skills
-cyber-physical systems,NJ Lightcast AI Skills
+cudnn,Lightcast AI Skills
+cyber governance,Lightcast AI Skills
+cyber-physical systems,Lightcast AI Skills
 dall-e,AI Specific tool
-dall-e 3,NJ Lightcast AI Skills
-dask,NJ Lightcast AI Skills
-data analysis,NJ Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
-data classification,NJ Lightcast AI Skills
-data collection,NJ Lightcast AI Skills
-data engineering,NJ Lightcast AI Skills
+dall-e 3,Lightcast AI Skills
+dask,Lightcast AI Skills
+data analysis,Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
+data classification,Lightcast AI Skills
+data collection,Lightcast AI Skills
+data engineering,Lightcast AI Skills
 "data management, processing",Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
 data mining,AI_Bowen_WU;Tambe2025_Algorithms;Tambe2025_Machines;custom2026
-data modeling,NJ Lightcast AI Skills
-data science,NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines_Alt;Tambe2025_Machines_Alt2;Abis_Veldkamp_2078;Stanford_Tech_Skills;Stanford_Tech_Skills;custom2026
+data modeling,Lightcast AI Skills
+data science,Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines_Alt;Tambe2025_Machines_Alt2;Abis_Veldkamp_2078;Stanford_Tech_Skills;Stanford_Tech_Skills;custom2026
 data scientist,Abis_Veldkamp_2085
-data sovereignty,NJ Lightcast AI Skills
-data version control,NJ Lightcast AI Skills
-databricks,NJ Lightcast AI Skills
-dbscan,NJ Lightcast AI Skills;Abis_Veldkamp_2030
-decision models,NJ Lightcast AI Skills
+data sovereignty,Lightcast AI Skills
+data version control,Lightcast AI Skills
+databricks,Lightcast AI Skills
+dbscan,Lightcast AI Skills;Abis_Veldkamp_2030
+decision models,Lightcast AI Skills
 decision tree,AI_Bowen_WU;custom2026
-decision tree learning,NJ Lightcast AI Skills
+decision tree learning,Lightcast AI Skills
 decision trees,Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;Abis_Veldkamp_2047
-deck.gl,NJ Lightcast AI Skills
-deep learning,AI tech term;AI_Bowen_WU;NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Abis_Veldkamp_2035;custom2026
-deep learning methods,NJ Lightcast AI Skills
-deep reinforcement learning,NJ Lightcast AI Skills
-deeplearning4j,NJ Lightcast AI Skills
-deepspeech,NJ Lightcast AI Skills
+deck.gl,Lightcast AI Skills
+deep learning,AI tech term;AI_Bowen_WU;Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Abis_Veldkamp_2035;custom2026
+deep learning methods,Lightcast AI Skills
+deep reinforcement learning,Lightcast AI Skills
+deeplearning4j,Lightcast AI Skills
+deepspeech,Lightcast AI Skills
 defuzzification,AI_Bowen_WU
-development testing,NJ Lightcast AI Skills
-dialog systems,NJ Lightcast AI Skills
-digital image processing,NJ Lightcast AI Skills
-digital twin technology,NJ Lightcast AI Skills
-digital.ai,NJ Lightcast AI Skills
-digital.ai release,NJ Lightcast AI Skills
-dimensionality reduction,AI_Bowen_WU;NJ Lightcast AI Skills
+development testing,Lightcast AI Skills
+dialog systems,Lightcast AI Skills
+digital image processing,Lightcast AI Skills
+digital twin technology,Lightcast AI Skills
+digital.ai,Lightcast AI Skills
+digital.ai release,Lightcast AI Skills
+dimensionality reduction,AI_Bowen_WU;Lightcast AI Skills
 discriminative model,custom2026
-distributed machine learning,NJ Lightcast AI Skills
-dlib,NJ Lightcast AI Skills
+distributed machine learning,Lightcast AI Skills
+dlib,Lightcast AI Skills
 drones,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-dynamic routing,NJ Lightcast AI Skills
+dynamic routing,Lightcast AI Skills
 ed tech,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
 edge ai,custom2026
-edge intelligence,NJ Lightcast AI Skills
+edge intelligence,Lightcast AI Skills
 elastic-net,Abis_Veldkamp_2058
-embedded ai,NJ Lightcast AI Skills
-embedded intelligence,NJ Lightcast AI Skills
+embedded ai,Lightcast AI Skills
+embedded intelligence,Lightcast AI Skills
 "energy, oil, and gas",Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-ensemble methods,NJ Lightcast AI Skills
-ethical ai,NJ Lightcast AI Skills;custom2026
-evolutionary acquisition of neural topologies,NJ Lightcast AI Skills
+ensemble methods,Lightcast AI Skills
+ethical ai,Lightcast AI Skills;custom2026
+evolutionary acquisition of neural topologies,Lightcast AI Skills
 evolutionary algorithm,Abis_Veldkamp_2077
-evolutionary programming,NJ Lightcast AI Skills
-expectation maximization algorithm,NJ Lightcast AI Skills
+evolutionary programming,Lightcast AI Skills
+expectation maximization algorithm,Lightcast AI Skills
 expert system,AI_Bowen_WU
-expert systems,NJ Lightcast AI Skills
-explainable ai,NJ Lightcast AI Skills;custom2026
-extract transform load ,NJ Lightcast AI Skills
-eye tracking,NJ Lightcast AI Skills
-face detection,NJ Lightcast AI Skills
-facial recognition,NJ Lightcast AI Skills;custom2026
+expert systems,Lightcast AI Skills
+explainable ai,Lightcast AI Skills;custom2026
+extract transform load ,Lightcast AI Skills
+eye tracking,Lightcast AI Skills
+face detection,Lightcast AI Skills
+facial recognition,Lightcast AI Skills;custom2026
 factor analysis,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-fast.ai,NJ Lightcast AI Skills
-fasttext,NJ Lightcast AI Skills
-feature engineering,NJ Lightcast AI Skills;custom2026
-feature extraction,NJ Lightcast AI Skills
-feature learning,NJ Lightcast AI Skills
-feature selection,AI_Bowen_WU;NJ Lightcast AI Skills
-federated learning,NJ Lightcast AI Skills
-few shot learning,NJ Lightcast AI Skills
+fast.ai,Lightcast AI Skills
+fasttext,Lightcast AI Skills
+feature engineering,Lightcast AI Skills;custom2026
+feature extraction,Lightcast AI Skills
+feature learning,Lightcast AI Skills
+feature selection,AI_Bowen_WU;Lightcast AI Skills
+federated learning,Lightcast AI Skills
+few shot learning,Lightcast AI Skills
 fintech,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
 fuzzy clustering,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-fuzzy logic,AI_Bowen_WU;NJ Lightcast AI Skills
-game ai,NJ Lightcast AI Skills
+fuzzy logic,AI_Bowen_WU;Lightcast AI Skills
+game ai,Lightcast AI Skills
 gans,custom2026
 gato,AI Non-tech term
-gaussian process,NJ Lightcast AI Skills
-gbm,NJ Lightcast AI Skills
+gaussian process,Lightcast AI Skills
+gbm,Lightcast AI Skills
 gemini,AI Specific tool
 genai,AI Non-tech term;custom2026
-general-purpose computing on graphics processing units,NJ Lightcast AI Skills
+general-purpose computing on graphics processing units,Lightcast AI Skills
 generative adversarial network,custom2026
-generative adversarial networks,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+generative adversarial networks,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 generative ai,AI Non-tech term;Stanford_AI_Skill_Clusters;custom2026
-generative ai agents,NJ Lightcast AI Skills
+generative ai agents,Lightcast AI Skills
 generative artificial intellegence,AI Non-tech term
-generative artificial intelligence,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+generative artificial intelligence,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 generative pre-trained transformer,custom2026
-genetic algorithm,AI_Bowen_WU;NJ Lightcast AI Skills;Abis_Veldkamp_2076;custom2026
+genetic algorithm,AI_Bowen_WU;Lightcast AI Skills;Abis_Veldkamp_2076;custom2026
 geospatial intelligence,Abis_Veldkamp_2068
-gesture recognition,NJ Lightcast AI Skills
-git,NJ Lightcast AI Skills
+gesture recognition,Lightcast AI Skills
+git,Lightcast AI Skills
 github,Programming term
-gnns,NJ Lightcast AI Skills
-google automl,NJ Lightcast AI Skills
-google cloud dialogflow,NJ Lightcast AI Skills
-google gemini,AI Specific tool;NJ Lightcast AI Skills
-google quantum ai,NJ Lightcast AI Skills
+gnns,Lightcast AI Skills
+google automl,Lightcast AI Skills
+google cloud dialogflow,Lightcast AI Skills
+google gemini,AI Specific tool;Lightcast AI Skills
+google quantum ai,Lightcast AI Skills
 gpt,custom2026
 gpt-3,AI Non-tech term
-gpt-4,NJ Lightcast AI Skills
+gpt-4,Lightcast AI Skills
 gpu,AI tech term;custom2026
 gpus,AI tech term
-gradient boosting,NJ Lightcast AI Skills;Abis_Veldkamp_2029;custom2026
-gradient boosting machines,NJ Lightcast AI Skills
-graph neural networks,NJ Lightcast AI Skills
+gradient boosting,Lightcast AI Skills;Abis_Veldkamp_2029;custom2026
+gradient boosting machines,Lightcast AI Skills
+graph neural networks,Lightcast AI Skills
 graph-based algorithms,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
 graphical model,AI_Bowen_WU
 graphics processing unit,custom2026
-guidance navigation and control systems,NJ Lightcast AI Skills
-h2o.ai,NJ Lightcast AI Skills
-handwriting recognition,NJ Lightcast AI Skills
+guidance navigation and control systems,Lightcast AI Skills
+h2o.ai,Lightcast AI Skills
+handwriting recognition,Lightcast AI Skills
 hidden markov,AI_Bowen_WU
-hidden markov model,NJ Lightcast AI Skills
+hidden markov model,Lightcast AI Skills
 hitl,custom2026
 hri,custom2026
-hugging face,NJ Lightcast AI Skills
-hugging face transformers,NJ Lightcast AI Skills
+hugging face,Lightcast AI Skills
+hugging face transformers,Lightcast AI Skills
 huggingface,AI tech term
 human-in-the-loop,custom2026
 human-robot interaction,custom2026
 hyperparameter,custom2026
-hyperparameter optimization,NJ Lightcast AI Skills
+hyperparameter optimization,Lightcast AI Skills
 hyperspectral imaging,AI_Bowen_WU
-image analysis,NJ Lightcast AI Skills
-image captioning,NJ Lightcast AI Skills
+image analysis,Lightcast AI Skills
+image captioning,Lightcast AI Skills
 image classification,custom2026
-image generation,NJ Lightcast AI Skills
-image inpainting,NJ Lightcast AI Skills
-image matching,NJ Lightcast AI Skills
+image generation,Lightcast AI Skills
+image inpainting,Lightcast AI Skills
+image matching,Lightcast AI Skills
 image processing,Abis_Veldkamp_2061
-image recognition,NJ Lightcast AI Skills;custom2026
-image segmentation,NJ Lightcast AI Skills;custom2026
-image sensor,NJ Lightcast AI Skills
-image super-resolution,NJ Lightcast AI Skills
-imagenet,NJ Lightcast AI Skills
-incremental learning,NJ Lightcast AI Skills
-inference engine,AI_Bowen_WU;NJ Lightcast AI Skills
-instance segmentation,NJ Lightcast AI Skills
+image recognition,Lightcast AI Skills;custom2026
+image segmentation,Lightcast AI Skills;custom2026
+image sensor,Lightcast AI Skills
+image super-resolution,Lightcast AI Skills
+imagenet,Lightcast AI Skills
+incremental learning,Lightcast AI Skills
+inference engine,AI_Bowen_WU;Lightcast AI Skills
+instance segmentation,Lightcast AI Skills
 insurtech,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
 integration of gen ai into the workflow of human customer service representatives,Stanford_GenAI_Use_Case
-intelligent agent,NJ Lightcast AI Skills;custom2026
-intelligent control,NJ Lightcast AI Skills
-intelligent systems,NJ Lightcast AI Skills
-intelligent virtual assistant,NJ Lightcast AI Skills
-interactive kiosk,NJ Lightcast AI Skills
+intelligent agent,Lightcast AI Skills;custom2026
+intelligent control,Lightcast AI Skills
+intelligent systems,Lightcast AI Skills
+intelligent virtual assistant,Lightcast AI Skills
+interactive kiosk,Lightcast AI Skills
 iot,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-ipsoft,NJ Lightcast AI Skills
-jax-ws,NJ Lightcast AI Skills
+ipsoft,Lightcast AI Skills
+jax-ws,Lightcast AI Skills
 k-means,Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;Abis_Veldkamp_2067-2
-k-means clustering,NJ Lightcast AI Skills
-kaldi,NJ Lightcast AI Skills
-keras,NJ Lightcast AI Skills
-kernel methods,NJ Lightcast AI Skills;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-knowledge distillation,NJ Lightcast AI Skills
-knowledge engineering,NJ Lightcast AI Skills
-knowledge representation,NJ Lightcast AI Skills
-knowledge-based configuration,NJ Lightcast AI Skills
-knowledge-based systems,NJ Lightcast AI Skills
-kubeflow,NJ Lightcast AI Skills
-langchain,NJ Lightcast AI Skills
-langgraph,NJ Lightcast AI Skills
-language models,NJ Lightcast AI Skills
+k-means clustering,Lightcast AI Skills
+kaldi,Lightcast AI Skills
+keras,Lightcast AI Skills
+kernel methods,Lightcast AI Skills;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
+knowledge distillation,Lightcast AI Skills
+knowledge engineering,Lightcast AI Skills
+knowledge representation,Lightcast AI Skills
+knowledge-based configuration,Lightcast AI Skills
+knowledge-based systems,Lightcast AI Skills
+kubeflow,Lightcast AI Skills
+langchain,Lightcast AI Skills
+langgraph,Lightcast AI Skills
+language models,Lightcast AI Skills
 large language model,AI tech term;custom2026
-large language modeling,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+large language modeling,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 lasso,Abis_Veldkamp_2054
-latent dirichlet allocation,NJ Lightcast AI Skills;Abis_Veldkamp_2070
-latent semantic indexing,NJ Lightcast AI Skills
+latent dirichlet allocation,Lightcast AI Skills;Abis_Veldkamp_2070
+latent semantic indexing,Lightcast AI Skills
 lda,Abis_Veldkamp_2071
-lexalytics,NJ Lightcast AI Skills
-libsvm,NJ Lightcast AI Skills
-lidar,NJ Lightcast AI Skills
-light detection and ranging,NJ Lightcast AI Skills
-lightgbm,NJ Lightcast AI Skills
-llama,NJ Lightcast AI Skills
+lexalytics,Lightcast AI Skills
+libsvm,Lightcast AI Skills
+lidar,Lightcast AI Skills
+light detection and ranging,Lightcast AI Skills
+lightgbm,Lightcast AI Skills
+llama,Lightcast AI Skills
 llm,AI tech term;custom2026
 logic program ,AI_Bowen_WU
 logic system ,AI_Bowen_WU
-long short-term memory,NJ Lightcast AI Skills;Abis_Veldkamp_2066;custom2026
-loss functions,NJ Lightcast AI Skills
-lstm,NJ Lightcast AI Skills;Abis_Veldkamp_2067;custom2026
+long short-term memory,Lightcast AI Skills;Abis_Veldkamp_2066;custom2026
+loss functions,Lightcast AI Skills
+lstm,Lightcast AI Skills;Abis_Veldkamp_2067;custom2026
 machine intelligence,AI_Bowen_WU
-machine learning,AI tech term;AI_Bowen_WU;NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Alt2;Tambe2025_Machines_Robustness;Abis_Veldkamp_2025;Stanford_AI_Skill_Clusters;custom2026
-machine learning algorithms,NJ Lightcast AI Skills
-machine learning methods,NJ Lightcast AI Skills
-machine learning model monitoring and evaluation,NJ Lightcast AI Skills
-machine learning model training,NJ Lightcast AI Skills
-machine translation,NJ Lightcast AI Skills;Abis_Veldkamp_2073;custom2026
-machine vision,NJ Lightcast AI Skills
+machine learning,AI tech term;AI_Bowen_WU;Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Alt2;Tambe2025_Machines_Robustness;Abis_Veldkamp_2025;Stanford_AI_Skill_Clusters;custom2026
+machine learning algorithms,Lightcast AI Skills
+machine learning methods,Lightcast AI Skills
+machine learning model monitoring and evaluation,Lightcast AI Skills
+machine learning model training,Lightcast AI Skills
+machine translation,Lightcast AI Skills;Abis_Veldkamp_2073;custom2026
+machine vision,Lightcast AI Skills
 mahout,Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
 marketing strategy content support,Stanford_GenAI_Use_Case
 "marketing, digital ads",Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-markov chain,NJ Lightcast AI Skills
+markov chain,Lightcast AI Skills
 markov chains,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-matrix factorization,NJ Lightcast AI Skills
+matrix factorization,Lightcast AI Skills
 maximum a posteriori,AI_Bowen_WU
 maximum entropy,AI_Bowen_WU
 maximum entropy classifier,Abis_Veldkamp_2081
 maximum likelihood,AI_Bowen_WU
 mechatronic,AI_Bowen_WU
-medical image processing analysis and visualization,NJ Lightcast AI Skills
+medical image processing analysis and visualization,Lightcast AI Skills
 meta ai,AI Specific tool
-meta-learning,NJ Lightcast AI Skills
-meta-reinforcement learning,NJ Lightcast AI Skills
-microsoft azure,NJ Lightcast AI Skills
-microsoft certified: azure ai engineer associate,NJ Lightcast AI Skills
-microsoft certified: azure ai fundamentals,NJ Lightcast AI Skills
-microsoft cognitive toolkit,NJ Lightcast AI Skills
-microsoft copilot,AI Specific tool;NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+meta-learning,Lightcast AI Skills
+meta-reinforcement learning,Lightcast AI Skills
+microsoft azure,Lightcast AI Skills
+microsoft certified: azure ai engineer associate,Lightcast AI Skills
+microsoft certified: azure ai fundamentals,Lightcast AI Skills
+microsoft cognitive toolkit,Lightcast AI Skills
+microsoft copilot,AI Specific tool;Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 midjourney,AI Specific tool
-mipav,NJ Lightcast AI Skills
+mipav,Lightcast AI Skills
 ml,AI tech term
-ml inference,NJ Lightcast AI Skills
-mlflow,NJ Lightcast AI Skills
-mlops,NJ Lightcast AI Skills
-mlpack,NJ Lightcast AI Skills
-mnist,NJ Lightcast AI Skills
+ml inference,Lightcast AI Skills
+mlflow,Lightcast AI Skills
+mlops,Lightcast AI Skills
+mlpack,Lightcast AI Skills
+mnist,Lightcast AI Skills
 model as a service,custom2026
 model training,custom2026
-modelops,NJ Lightcast AI Skills
+modelops,Lightcast AI Skills
 motif discovery,AI_Bowen_WU
-motion analysis,NJ Lightcast AI Skills
+motion analysis,Lightcast AI Skills
 motion capture ,AI_Bowen_WU
-motion planning,NJ Lightcast AI Skills
-multi-agent systems,NJ Lightcast AI Skills
-multimodal learning,NJ Lightcast AI Skills
-multimodal models,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+motion planning,Lightcast AI Skills
+multi-agent systems,Lightcast AI Skills
+multimodal learning,Lightcast AI Skills
+multimodal models,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 naive bayes,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;custom2026
-naive bayes classifier,NJ Lightcast AI Skills
+naive bayes classifier,Lightcast AI Skills
 named entity recognition,custom2026
 narrow ai,custom2026
-nas,NJ Lightcast AI Skills
+nas,Lightcast AI Skills
 natural language ,AI_Bowen_WU
-natural language generation,NJ Lightcast AI Skills
-natural language processing,AI tech term;NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Abis_Veldkamp_2026;Stanford_AI_Skill_Clusters;custom2026
-natural language programming,NJ Lightcast AI Skills
+natural language generation,Lightcast AI Skills
+natural language processing,AI tech term;Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Abis_Veldkamp_2026;Stanford_AI_Skill_Clusters;custom2026
+natural language programming,Lightcast AI Skills
 natural language toolkit,Abis_Veldkamp_2062
-natural language toolkits,NJ Lightcast AI Skills
-natural language understanding,NJ Lightcast AI Skills;custom2026
-natural language user interface,NJ Lightcast AI Skills
+natural language toolkits,Lightcast AI Skills
+natural language understanding,Lightcast AI Skills;custom2026
+natural language user interface,Lightcast AI Skills
 naïve bayes,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
 nearest neighbor,Abis_Veldkamp_2031
-nearest neighbour algorithm,NJ Lightcast AI Skills
+nearest neighbour algorithm,Lightcast AI Skills
 ner,custom2026
-neural architecture compression,NJ Lightcast AI Skills
-neural architecture search,NJ Lightcast AI Skills
+neural architecture compression,Lightcast AI Skills
+neural architecture search,Lightcast AI Skills
 neural nets,Abis_Veldkamp_2046
 neural network,AI tech term;AI_Bowen_WU;Abis_Veldkamp_2043
 neural networks,Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;Stanford_AI_Skill_Clusters;custom2026
-neural ordinary differential equations,NJ Lightcast AI Skills
-neuro-symbolic ai,NJ Lightcast AI Skills
-nlg,NJ Lightcast AI Skills
-nlp,AI tech term;NJ Lightcast AI Skills;Abis_Veldkamp_2027;custom2026
+neural ordinary differential equations,Lightcast AI Skills
+neuro-symbolic ai,Lightcast AI Skills
+nlg,Lightcast AI Skills
+nlp,AI tech term;Lightcast AI Skills;Abis_Veldkamp_2027;custom2026
 "nlp, customer support",Stanford_AI_FocusAreas
 nltk,Abis_Veldkamp_2063
-nlu,NJ Lightcast AI Skills;custom2026
-notion (software),NJ Lightcast AI Skills
-nuance mix,NJ Lightcast AI Skills
+nlu,Lightcast AI Skills;custom2026
+notion (software),Lightcast AI Skills
+nuance mix,Lightcast AI Skills
 nvidia,AI tech term
-nvidia jetson,NJ Lightcast AI Skills
+nvidia jetson,Lightcast AI Skills
 object detection,custom2026
-object recognition,NJ Lightcast AI Skills
-object tracking,NJ Lightcast AI Skills
-objective function,NJ Lightcast AI Skills
-ocr,NJ Lightcast AI Skills;custom2026
-omnipage,NJ Lightcast AI Skills
-onnx,NJ Lightcast AI Skills
+object recognition,Lightcast AI Skills
+object tracking,Lightcast AI Skills
+objective function,Lightcast AI Skills
+ocr,Lightcast AI Skills;custom2026
+omnipage,Lightcast AI Skills
+onnx,Lightcast AI Skills
 ontologies,Tambe2025_Machines_Alt
 open ai,AI Company
 open ai chatgpt,AI Specific tool
 open ai dall-e,AI Specific tool
-open neural network exchange,NJ Lightcast AI Skills
-openai gym,NJ Lightcast AI Skills
-openai gym environments,NJ Lightcast AI Skills
-opencv,NJ Lightcast AI Skills
-openvino,NJ Lightcast AI Skills
-operationalizing ai,NJ Lightcast AI Skills
-optical character recognition,NJ Lightcast AI Skills;custom2026
-oracle autonomous database,NJ Lightcast AI Skills
-paddlepaddle,NJ Lightcast AI Skills
+open neural network exchange,Lightcast AI Skills
+openai gym,Lightcast AI Skills
+openai gym environments,Lightcast AI Skills
+opencv,Lightcast AI Skills
+openvino,Lightcast AI Skills
+operationalizing ai,Lightcast AI Skills
+optical character recognition,Lightcast AI Skills;custom2026
+oracle autonomous database,Lightcast AI Skills
+paddlepaddle,Lightcast AI Skills
 pandas,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-path analysis,NJ Lightcast AI Skills
-path finding,NJ Lightcast AI Skills
+path analysis,Lightcast AI Skills
+path finding,Lightcast AI Skills
 path planning,custom2026
-pattern recognition,AI_Bowen_WU;NJ Lightcast AI Skills;Tambe2025_Machines_Alt;Abis_Veldkamp_2064;custom2026
+pattern recognition,AI_Bowen_WU;Lightcast AI Skills;Tambe2025_Machines_Alt;Abis_Veldkamp_2064;custom2026
 pca,custom2026
-perceptron,NJ Lightcast AI Skills
-pinecone,NJ Lightcast AI Skills
+perceptron,Lightcast AI Skills
+pinecone,Lightcast AI Skills
 platfora,Abis_Veldkamp_2042
-pose estimation,NJ Lightcast AI Skills
-predictionio,NJ Lightcast AI Skills
+pose estimation,Lightcast AI Skills
+predictionio,Lightcast AI Skills
 predictive analysis,AI_Bowen_WU
 predictive analytics,Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt;custom2026
 predictive model,AI_Bowen_WU
-predictive model markup language,NJ Lightcast AI Skills
-predictive modeling,NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;custom2026
+predictive model markup language,Lightcast AI Skills
+predictive modeling,Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;custom2026
 predictive models,Tambe2025_Machines;Tambe2025_Machines_Alt
 principal component analysis,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;custom2026
-programmatic media buying,NJ Lightcast AI Skills
-prompt engineering,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
-pybrain,NJ Lightcast AI Skills
-pydata,NJ Lightcast AI Skills
-python,NJ Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills;custom2026
-pytorch,AI tech term;NJ Lightcast AI Skills;custom2026
+programmatic media buying,Lightcast AI Skills
+prompt engineering,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+pybrain,Lightcast AI Skills
+pydata,Lightcast AI Skills
+python,Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills;custom2026
+pytorch,AI tech term;Lightcast AI Skills;custom2026
 pytorch ,AI_Bowen_WU
-pytorch lightning,NJ Lightcast AI Skills
-qdrant,NJ Lightcast AI Skills
+pytorch lightning,Lightcast AI Skills
+qdrant,Lightcast AI Skills
 question answering,custom2026
-rag,NJ Lightcast AI Skills
+rag,Lightcast AI Skills
 random forest,AI_Bowen_WU;Abis_Veldkamp_2048;custom2026
-random forest algorithm,NJ Lightcast AI Skills
+random forest algorithm,Lightcast AI Skills
 random forests,Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-realsense,NJ Lightcast AI Skills
-reasoning systems,NJ Lightcast AI Skills
+realsense,Lightcast AI Skills
+reasoning systems,Lightcast AI Skills
 recommendation engine,custom2026
-recommender systems,NJ Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt
-recurrent neural network,NJ Lightcast AI Skills;custom2026
-recurrent neural networks,NJ Lightcast AI Skills
-reinforcement learning,NJ Lightcast AI Skills;Abis_Veldkamp_2052;custom2026
+recommender systems,Lightcast AI Skills;Tambe2025_Algorithms;Tambe2025_Machines;Tambe2025_Machines_Alt
+recurrent neural network,Lightcast AI Skills;custom2026
+recurrent neural networks,Lightcast AI Skills
+reinforcement learning,Lightcast AI Skills;Abis_Veldkamp_2052;custom2026
 reinforcement learning ,AI_Bowen_WU
-reinforcement learning from human feedback,NJ Lightcast AI Skills
-residual networks,NJ Lightcast AI Skills
-resnet,NJ Lightcast AI Skills
-retrieval augmented generation,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+reinforcement learning from human feedback,Lightcast AI Skills
+residual networks,Lightcast AI Skills
+resnet,Lightcast AI Skills
+retrieval augmented generation,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 ridge regression,Abis_Veldkamp_2057
-rl,NJ Lightcast AI Skills
-rlhf,NJ Lightcast AI Skills
-rnn,NJ Lightcast AI Skills;Abis_Veldkamp_2045;custom2026
-rnns,NJ Lightcast AI Skills
+rl,Lightcast AI Skills
+rlhf,Lightcast AI Skills
+rnn,Lightcast AI Skills;Abis_Veldkamp_2045;custom2026
+rnns,Lightcast AI Skills
 robot ,AI_Bowen_WU
-robot framework,NJ Lightcast AI Skills
-robot operating systems,NJ Lightcast AI Skills
-robotic automation software,NJ Lightcast AI Skills
-robotic liquid handling systems,NJ Lightcast AI Skills
-robotic programming,NJ Lightcast AI Skills
-robotic systems,NJ Lightcast AI Skills
+robot framework,Lightcast AI Skills
+robot operating systems,Lightcast AI Skills
+robotic automation software,Lightcast AI Skills
+robotic liquid handling systems,Lightcast AI Skills
+robotic programming,Lightcast AI Skills
+robotic systems,Lightcast AI Skills
 robotics,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas;Stanford_AI_Skill_Clusters
-sas certified,NJ Lightcast AI Skills
-sas certified predictive modeler,NJ Lightcast AI Skills
-sas certified professional: ai & machine learning,NJ Lightcast AI Skills
-sas certified specialist: advanced predictive modeling,NJ Lightcast AI Skills
-sas certified specialist: machine learning,NJ Lightcast AI Skills
-sas certified specialist: natural language processing and computer vision,NJ Lightcast AI Skills
-scene understanding,NJ Lightcast AI Skills
-scikit-learn,NJ Lightcast AI Skills;Abis_Veldkamp_2038;custom2026
-screen reader,NJ Lightcast AI Skills
+sas certified,Lightcast AI Skills
+sas certified predictive modeler,Lightcast AI Skills
+sas certified professional: ai & machine learning,Lightcast AI Skills
+sas certified specialist: advanced predictive modeling,Lightcast AI Skills
+sas certified specialist: machine learning,Lightcast AI Skills
+sas certified specialist: natural language processing and computer vision,Lightcast AI Skills
+scene understanding,Lightcast AI Skills
+scikit-learn,Lightcast AI Skills;Abis_Veldkamp_2038;custom2026
+screen reader,Lightcast AI Skills
 self-driving cars,custom2026
-semantic analysis,AI_Bowen_WU;NJ Lightcast AI Skills
-semantic interpretation for speech recognition,NJ Lightcast AI Skills
-semantic kernel,NJ Lightcast AI Skills
-semantic parsing,NJ Lightcast AI Skills
-semantic search,NJ Lightcast AI Skills;Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-semi-supervised learning,NJ Lightcast AI Skills;Abis_Veldkamp_2084;custom2026
+semantic analysis,AI_Bowen_WU;Lightcast AI Skills
+semantic interpretation for speech recognition,Lightcast AI Skills
+semantic kernel,Lightcast AI Skills
+semantic parsing,Lightcast AI Skills
+semantic search,Lightcast AI Skills;Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
+semi-supervised learning,Lightcast AI Skills;Abis_Veldkamp_2084;custom2026
 semiconductors,Stanford_AI_FocusAreas;Stanford_AI_FocusAreas
-sentence transformers,NJ Lightcast AI Skills
-sentiment analysis,NJ Lightcast AI Skills;custom2026
-seq2seq,NJ Lightcast AI Skills
-sequence-to-sequence models,NJ Lightcast AI Skills
-servomotor,NJ Lightcast AI Skills
+sentence transformers,Lightcast AI Skills
+sentiment analysis,Lightcast AI Skills;custom2026
+seq2seq,Lightcast AI Skills
+sequence-to-sequence models,Lightcast AI Skills
+servomotor,Lightcast AI Skills
 sgd,Abis_Veldkamp_2056
-shogun,NJ Lightcast AI Skills
-simultaneous localization and mapping,NJ Lightcast AI Skills
-slam algorithms,NJ Lightcast AI Skills
-small language model,NJ Lightcast AI Skills
+shogun,Lightcast AI Skills
+simultaneous localization and mapping,Lightcast AI Skills
+slam algorithms,Lightcast AI Skills
+small language model,Lightcast AI Skills
 smart assistant,custom2026
 social network analysis,Tambe2025_Machines_Alt
-soft computing,NJ Lightcast AI Skills
-software design patterns,NJ Lightcast AI Skills
-sorting algorithm,NJ Lightcast AI Skills
-spacy,NJ Lightcast AI Skills
-speech recognition,NJ Lightcast AI Skills;Abis_Veldkamp_2028;custom2026
-speech recognition grammar specification,NJ Lightcast AI Skills
-speech recognition software,NJ Lightcast AI Skills
-speech synthesis,NJ Lightcast AI Skills
-sphinx speech recognition,NJ Lightcast AI Skills
-spiking neural networks,NJ Lightcast AI Skills
-sql,NJ Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
-stable diffusion,NJ Lightcast AI Skills
-statistical language acquisition,NJ Lightcast AI Skills
+soft computing,Lightcast AI Skills
+software design patterns,Lightcast AI Skills
+sorting algorithm,Lightcast AI Skills
+spacy,Lightcast AI Skills
+speech recognition,Lightcast AI Skills;Abis_Veldkamp_2028;custom2026
+speech recognition grammar specification,Lightcast AI Skills
+speech recognition software,Lightcast AI Skills
+speech synthesis,Lightcast AI Skills
+sphinx speech recognition,Lightcast AI Skills
+spiking neural networks,Lightcast AI Skills
+sql,Lightcast AI Skills;Stanford_Tech_Skills;Stanford_Tech_Skills
+stable diffusion,Lightcast AI Skills
+statistical language acquisition,Lightcast AI Skills
 stochastic gradient descent,AI_Bowen_WU;Abis_Veldkamp_2055
-stochastic neighbor embedding,NJ Lightcast AI Skills
+stochastic neighbor embedding,Lightcast AI Skills
 stochastic optimization,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-summarization methods,NJ Lightcast AI Skills
-supervised learning,AI tech term;AI_Bowen_WU;NJ Lightcast AI Skills;Abis_Veldkamp_2032/3;custom2026
-support vector machine,AI_Bowen_WU;NJ Lightcast AI Skills;Abis_Veldkamp_2050;custom2026
-support vector machines,NJ Lightcast AI Skills;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-svm,NJ Lightcast AI Skills;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;Abis_Veldkamp_2051;custom2026
-swarm intelligence,NJ Lightcast AI Skills
+summarization methods,Lightcast AI Skills
+supervised learning,AI tech term;AI_Bowen_WU;Lightcast AI Skills;Abis_Veldkamp_2032/3;custom2026
+support vector machine,AI_Bowen_WU;Lightcast AI Skills;Abis_Veldkamp_2050;custom2026
+support vector machines,Lightcast AI Skills;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
+svm,Lightcast AI Skills;Tambe2025_Machines;Tambe2025_Machines_Alt;Tambe2025_Machines_Tech;Abis_Veldkamp_2051;custom2026
+swarm intelligence,Lightcast AI Skills
 symbolic reasoning ,AI_Bowen_WU
-synthesio,NJ Lightcast AI Skills
-synthetic data generation,NJ Lightcast AI Skills
-t-distributed stochastic neighbor embedding,NJ Lightcast AI Skills
-t-sne,NJ Lightcast AI Skills
-tda,NJ Lightcast AI Skills
+synthesio,Lightcast AI Skills
+synthetic data generation,Lightcast AI Skills
+t-distributed stochastic neighbor embedding,Lightcast AI Skills
+t-sne,Lightcast AI Skills
+tda,Lightcast AI Skills
 tensor flow,Abis_Veldkamp_2041
 tensor processing unit,custom2026
-tensorflow,NJ Lightcast AI Skills;Abis_Veldkamp_2040;custom2026
+tensorflow,Lightcast AI Skills;Abis_Veldkamp_2040;custom2026
 tensorflow ,AI_Bowen_WU
-test datasets,NJ Lightcast AI Skills
+test datasets,Lightcast AI Skills
 text analysis,custom2026
-text mining,NJ Lightcast AI Skills;Abis_Veldkamp_2059
-text retrieval systems,NJ Lightcast AI Skills
-text summarization,NJ Lightcast AI Skills
-text to speech,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+text mining,Lightcast AI Skills;Abis_Veldkamp_2059
+text retrieval systems,Lightcast AI Skills
+text summarization,Lightcast AI Skills
+text to speech,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
 text-to-speech,custom2026
-theano,NJ Lightcast AI Skills
-thermal imaging analysis,NJ Lightcast AI Skills
+theano,Lightcast AI Skills
+thermal imaging analysis,Lightcast AI Skills
 time series forecasting,Tambe2025_Machines_Alt;Tambe2025_Machines_Tech
-tokenization,NJ Lightcast AI Skills;custom2026
-topological data analysis,NJ Lightcast AI Skills
-torch,NJ Lightcast AI Skills;Abis_Veldkamp_2037;Abis_Veldkamp_2053
+tokenization,Lightcast AI Skills;custom2026
+topological data analysis,Lightcast AI Skills
+torch,Lightcast AI Skills;Abis_Veldkamp_2037;Abis_Veldkamp_2053
 tpu,custom2026
 train models,AI tech term
 training data,custom2026
-training datasets,NJ Lightcast AI Skills
-transfer learning,NJ Lightcast AI Skills
-transformer,NJ Lightcast AI Skills
+training datasets,Lightcast AI Skills
+transfer learning,Lightcast AI Skills
+transformer,Lightcast AI Skills
 transformers,custom2026
 tts,Stanford_GenAI_Skill
-uas,NJ Lightcast AI Skills
-unmanned aerial systems,NJ Lightcast AI Skills
-unsupervised learning,AI tech term;AI_Bowen_WU;NJ Lightcast AI Skills;Abis_Veldkamp_2034;custom2026
-variational autoencoders,NJ Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
-vertex ai,NJ Lightcast AI Skills
-vespa,NJ Lightcast AI Skills
+uas,Lightcast AI Skills
+unmanned aerial systems,Lightcast AI Skills
+unsupervised learning,AI tech term;AI_Bowen_WU;Lightcast AI Skills;Abis_Veldkamp_2034;custom2026
+variational autoencoders,Lightcast AI Skills;Stanford_GenAI_Skill;Stanford_GenAI_Skill
+vertex ai,Lightcast AI Skills
+vespa,Lightcast AI Skills
 vision language model,AI tech term
 visual ai,custom2026
 visual image recognition,Stanford_AI_Skill_Clusters
-voice assistant technology,NJ Lightcast AI Skills
-voice interaction,NJ Lightcast AI Skills
-voice user interface,NJ Lightcast AI Skills
-vowpal wabbit,NJ Lightcast AI Skills
+voice assistant technology,Lightcast AI Skills
+voice interaction,Lightcast AI Skills
+voice user interface,Lightcast AI Skills
+vowpal wabbit,Lightcast AI Skills
 vr,Stanford_AI_FocusAreas
-water erosion prediction project,NJ Lightcast AI Skills
-watson conversation,NJ Lightcast AI Skills
-watson studio,NJ Lightcast AI Skills
+water erosion prediction project,Lightcast AI Skills
+watson conversation,Lightcast AI Skills
+watson studio,Lightcast AI Skills
 weak ai,custom2026
-weaviate,NJ Lightcast AI Skills
-weka,NJ Lightcast AI Skills
-wepp model,NJ Lightcast AI Skills
-word embedding,NJ Lightcast AI Skills;custom2026
-word2vec,NJ Lightcast AI Skills;Abis_Veldkamp_2075
-xai,NJ Lightcast AI Skills
-xgboost,AI_Bowen_WU;NJ Lightcast AI Skills
-zero shot learning,NJ Lightcast AI Skills
+weaviate,Lightcast AI Skills
+weka,Lightcast AI Skills
+wepp model,Lightcast AI Skills
+word embedding,Lightcast AI Skills;custom2026
+word2vec,Lightcast AI Skills;Abis_Veldkamp_2075
+xai,Lightcast AI Skills
+xgboost,AI_Bowen_WU;Lightcast AI Skills
+zero shot learning,Lightcast AI Skills
