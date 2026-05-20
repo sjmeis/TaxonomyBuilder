@@ -1,6 +1,13 @@
-# TaxonomyBuilder: Building Domain-specific Taxonomies from the Ground Up
+<div align="center">
 
-A robust, high-performance Python framework for transforming massive, unstructured text datasets into structured, hierarchical taxonomies.
+  # TaxonomyBuilder: Building Domain-specific Taxonomies from the Ground Up
+
+  [![PyPI version](https://img.shields.io/pypi/v/taxonomybuilder.svg)](https://pypi.org/project/taxonomybuilder/)
+  [![License](https://img.shields.io/github/license/sjmeis/TaxonomyBuilder.svg)](https://github.com/sjmeis/TaxonomyBuilder/blob/main/LICENSE)
+
+</div>
+
+A robust, high-performance Python framework for transforming massive, unstructured text datasets into structured, hierarchical taxonomies. Originally published as part of the CustomNLP4U 2026 paper: *Building a Custom Taxonomy of AI Skills and Tasks from the Ground Up with Job Postings*
 
 ## 🚀 Overview
 **TaxonomyBuilder** bridges the gap between raw data and structured knowledge. It leverages **Sentence Transformers** for semantic representation, **RAPIDS (cuML)** for GPU-accelerated clustering (if applicable), and **LLMs (user-defined: OpenAI, Anthropic, etc.)** for natural language categorization and recursive hierarchy building. The end product is a semantically meaningful taxonomy built from the ground up!
@@ -78,19 +85,22 @@ Unlike flat clustering, **TaxonomyBuilder** re-clusters the labels of the previo
 ```plaintext
 TaxonomyBuilder/
 ├── src/TaxonomyBuilder/
-│   ├── core.py           # Main Logic
-│   ├── clustering.py     # GPU/CPU Dispatcher (UMAP/HDBSCAN)
-│   ├── data.py           # PyTorch Dataset & Dataloaders
-│   ├── llm.py            # LLM Provider Interface
-│   └── prompt_utils.py   # Dynamic Template & Few-shot Logic
-├── tests/                # Pytest suite
-├── pyproject.toml        # Build configuration
-└── setup.py              # Metadata & Dependencies
+   ├── core.py           # Main Logic
+   ├── clustering.py     # GPU/CPU Dispatcher (UMAP/HDBSCAN)
+   ├── data.py           # PyTorch Dataset & Dataloaders
+   ├── llm.py            # LLM Provider Interface
+   └── prompt_utils.py   # Dynamic Template & Few-shot Logic
 ```
-
 
 ## 💡 Tips and Hints
  - Domain Context: We highly recommend seeding the process with domain-specific keywords. Additionally, make sure to add example for the labeling process (max. 3)!
  - Memory Management: If you have a massive dataset, set `batch_size` lower in `.encode()` to avoid out-of-memory issues.
  - Consolidation: If your taxonomy has too many "similar" sounding categories, lower the `similarity_threshold` in `consolidate_labels` to group more labels together.
  - The "Noise": Any text marked as -1 by HDBSCAN will be labeled as noise (-1) unless `soft_cluster=True` is used. It is up to you whether you want to include these points or not!
+
+## 
+If you use or build upon `TaxonomyBuilder`, we would appreciate it if you cited the original work:
+
+```
+Bib entry coming soon!
+```
