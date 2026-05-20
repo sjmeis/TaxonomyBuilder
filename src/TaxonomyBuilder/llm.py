@@ -1,5 +1,3 @@
-import os
-
 class LLMProvider:
     """Base class for all LLM providers."""
     def generate(self, prompt: str) -> str:
