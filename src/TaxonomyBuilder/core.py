@@ -377,26 +377,27 @@ class TaxonomyBuilder:
     Output:::
     Description: """
 
+        processed = set()
         for group in tqdm(merge_groups, desc="Aggregating Labels"):
-            master_id = group[0]
-            valid_group = [cid for cid in group if cid in self.taxonomy_labels]
+            valid_group = [cid for cid in group if cid in self.taxonomy_labels and cid not in processed]
             if len(valid_group) < 2:
                 continue
 
-            statements = [self.taxonomy_labels[cid] for cid in group]
+            statements = [self.taxonomy_labels[cid] for cid in valid_group]
             prompt = agg_template.format(str(statements))
             
             new_label = self.llm.generate(prompt).split("Description:")[-1].strip()
             
             # update the id
-            master_id = group[0]
+            master_id = valid_group[0]
             self.taxonomy_labels[master_id] = new_label
             
             # update original data
-            for other_id in group[1:]:
+            for other_id in valid_group[1:]:
                 self.cluster_labels[self.cluster_labels == other_id] = master_id
                 if other_id in self.taxonomy_labels:
                     del self.taxonomy_labels[other_id]
+            processed.update(valid_group)
 
         return self
     
