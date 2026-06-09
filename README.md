@@ -102,5 +102,14 @@ TaxonomyBuilder/
 If you use or build upon `TaxonomyBuilder`, we would appreciate it if you cited the original work:
 
 ```
-Bib entry coming soon!
+@misc{meisenbacher2026buildingcustomtaxonomyai,
+      title={Building a Custom Taxonomy of AI Skills and Tasks from the Ground Up with Job Postings}, 
+      author={Stephen Meisenbacher and Peter Norlander},
+      year={2026},
+      eprint={2605.21029},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.21029},
+      doi={10.48550/arXiv.2605.21029}
+}
 ```
